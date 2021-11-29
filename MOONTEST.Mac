@@ -1,0 +1,14 @@
+import 'Dumpam12Docking'    
+handle any                                                                               
+endhandle                                                                                
+$p Infoget Dev Program Start...                                              
+                                                                               
+using namespace 'Dumpam12Docking'                                                                                                                           
+!dll = 'C:\AVEVA\Marine\OH12.1.SP4\IPC_Client.dll' 
+--!typ = namespace + class name                                                          
+!typ = 'IPC_Client.Program'                                                                 
+--!exe = method name                                                                     
+!exe = 'Run'                                                                          
+!obj = object DumpAAA()                                                       
+!obj.Run(!dll, !typ, !exe)                                                   
+SaveWork                  
