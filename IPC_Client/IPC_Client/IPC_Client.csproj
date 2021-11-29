@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CF3DAC8-5FAC-4CE1-BC0A-AE6CD606E62C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPC_Client</RootNamespace>
+    <AssemblyName>IPC_Client</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\AVEVA\Marine\OH12.1.SP4\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aveva.ApplicationFramework.Presentation, Version=108.8100.20.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.ApplicationFramework.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.ApplicationFramework.Presentation.Implementation, Version=108.8100.20.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.ApplicationFramework.Presentation.Implementation.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Clasher, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.Clasher.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Database, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Database.Xml, Version=12.1.4.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.Database.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Design, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Geometry, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Graphics, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Shared, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Aveva.Pdms.Utilities, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\Aveva.Pdms.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="IPC_RemoteObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\IPC_RemoteObject.dll</HintPath>
+    </Reference>
+    <Reference Include="marAPI, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\marAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="PDMSFilters, Version=12.1.0.0, Culture=neutral, PublicKeyToken=17c64733a9775004, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\PDMSFilters.dll</HintPath>
+    </Reference>
+    <Reference Include="PMLNet">
+      <HintPath>C:\AVEVA\Marine\OH12.1.SP4\PMLNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AM\AvevaAtt.cs" />
+    <Compile Include="AM\AvevaClash.cs" />
+    <Compile Include="AM\AvevaMarAPI.cs" />
+    <Compile Include="AM\AvevaUtil.cs" />
+    <Compile Include="Default\DefaultDefine.cs" />
+    <Compile Include="Default\DefaultEnum.cs" />
+    <Compile Include="Default\DefaultGlobal.cs" />
+    <Compile Include="Default\DefaultSetting.cs" />
+    <Compile Include="Default\DefaultSettingInst.cs" />
+    <Compile Include="Default\IniFile.cs" />
+    <Compile Include="Default\Log.cs" />
+    <Compile Include="frmIPC_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIPC_Client.Designer.cs">
+      <DependentUpon>frmIPC_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geometry\Arc2D.cs" />
+    <Compile Include="Geometry\Circle2D.cs" />
+    <Compile Include="Geometry\Colour.cs" />
+    <Compile Include="Geometry\IGES.cs" />
+    <Compile Include="Geometry\Line2D.cs" />
+    <Compile Include="Geometry\Line3D.cs" />
+    <Compile Include="Geometry\LineType.cs" />
+    <Compile Include="Geometry\Plane3D.cs" />
+    <Compile Include="Geometry\PlaneName.cs" />
+    <Compile Include="Geometry\Point2D.cs" />
+    <Compile Include="Geometry\Point3D.cs" />
+    <Compile Include="Geometry\Polyline2D.cs" />
+    <Compile Include="Geometry\Rectangle2D.cs" />
+    <Compile Include="Geometry\Segment2D.cs" />
+    <Compile Include="Geometry\Text.cs" />
+    <Compile Include="Geometry\Transformation2D.cs" />
+    <Compile Include="Geometry\Transformation3D.cs" />
+    <Compile Include="Geometry\Vector2D.cs" />
+    <Compile Include="Geometry\Vector3D.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Extensions.cs" />
+    <Compile Include="Util\Utils.cs" />
+    <EmbeddedResource Include="frmIPC_Client.resx">
+      <DependentUpon>frmIPC_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Geometry\0GeoComment.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
